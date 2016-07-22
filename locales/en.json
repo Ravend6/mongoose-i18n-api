@@ -19,6 +19,7 @@
   "drink": "drink",
   "phone": "phone",
   "email": "email",
+  "avatar": "avatar",
   "Welcome to %": "Welcome to %",
   "mongoose required %s": "The %s field is required.",
   "mongoose minlength %s %s": "The %s must be at least %s characters.",
@@ -28,5 +29,7 @@
   "mongoose enum %s %s": "The value %s is not a valid enum for path %s.",
   "mongoose phone %s %s": "The value %s is not a valid for %s.",
   "mongoose email %s": "The %s must be a valid email address.",
-  "mongoose unique %s": "The %s has already been taken."
+  "mongoose unique %s": "The %s has already been taken.",
+  "multer mimes %s %s": "The %s must be a file of type: %s.",
+  "multer maxfilesize %s %s": "The %s may not be greater than %s bytes."
 }

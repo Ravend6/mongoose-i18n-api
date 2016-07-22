@@ -51,6 +51,7 @@ app.use(function (req, res, next) {
   next(err)
 })
 
+app.use(require('./middleware/multer-errors'))
 app.use(require('./middleware/mongoose-errors'))
 app.use(require('./middleware/errors'))
 

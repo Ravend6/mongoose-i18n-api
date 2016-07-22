@@ -1,10 +1,7 @@
-// let msg = 'Validation len :min=2'
-let msg = 'Validation len :min=2 :max=9'
+require('crypto').randomBytes(16, function (err, buffer) {
+  var token = buffer.toString('hex')
+  console.log(token)
+})
 
-// var myString = "something format_abc";
-// let myRegexp = /(.*?):min=(.*?)(?:\s|$)/g
-let myRegexp = /(?:^|\s)(.*?):min=(.*?)(?:\s|$)(.*?):max=(.*?)(?:\s|$)/g
-let match = myRegexp.exec(msg)
-console.log(match)
-// console.log(myRegexp.test(msg))
-// alert(match[1])  // abc
+const buf = require('crypto').randomBytes(16)
+console.log(buf.toString('hex'))

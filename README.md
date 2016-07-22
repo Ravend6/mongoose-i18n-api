@@ -8,6 +8,7 @@
 - validation
 - template pug (rename jade)
 - i18n
+- upload image
 - and more
 
 ## Installation
