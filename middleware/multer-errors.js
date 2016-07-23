@@ -1,7 +1,5 @@
 module.exports = (err, req, res, next) => {
   if (err.name === 'MulterValidationError') {
-    // let errors = translateValidation(err, req)
-    console.log('err', err)
     let error = {
       error: err.name,
       message: err.message,
@@ -11,7 +9,7 @@ module.exports = (err, req, res, next) => {
     return res.status(400).json(error)
   }
   if (err.code === 'LIMIT_FILE_SIZE') {
-    console.log('err', JSON.stringify(err))
+    // console.log('err', JSON.stringify(err))
     let error = {
       error: 'MulterValidationError',
       message: req.__('multer maxfilesize %s %s', req.__(err.field), err.maxfilesize),
